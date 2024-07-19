@@ -1,0 +1,57 @@
+.headertwo {
+    max-height: 50px;
+    padding: 10px;
+    align-items: center;
+    background-color: #b71c1c;
+  }
+  
+  .element-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+  }
+   
+  .element-list li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .element-list li:last-child {
+    margin-right: 0;
+  }
+  
+  .element-list li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .element-list li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 576px) {
+    .element-list {
+      display: none; /* Hide the element list on smaller screens */
+    }
+  }
+  .headertwo {
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  
+  .element-list {
+    display: flex; /* Display the list items in a row */
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .element-list li {
+    margin-right: 15px; /* Add some space between each list item */
+  }
+  
+  .element-list li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+  }
+  

@@ -1,0 +1,89 @@
+/* Shared styles */
+.menu-toggle {
+  display: block; /* Ensure menu toggle is always displayed */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #b71c1c;
+  margin: 3px 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #f9f9f9;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav.open {
+  transform: translateX(0);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  margin: 1rem 0;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Header styles */
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  min-width: 320px; /* Adjust the min-width value as needed */
+  max-height: 10px;
+}
+
+.menu-text {
+  font-size: 10px; /* Adjust the font size as needed */
+}
+
+/* Second header styles */
+.second-header {
+  display: none; /* Initially hide the second header */
+  max-height: 10px;
+}
+
+.search-icon {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: black; /* Ensure the icon color is set */
+}
+
+.pc-screen-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.pc-screen-nav ul li {
+  margin-left: 1rem;
+}
+
+.pc-screen-nav ul li a {
+  color: black;
+  text-decoration: none;
+}

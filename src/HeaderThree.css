@@ -1,0 +1,66 @@
+.header-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    background-color: #f0f0f0; /* Adjust the background color as needed */
+    color: #b71c1c;
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+  
+  .left-icons {
+    display: flex;
+  }
+  
+  .left-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #b71c1c;
+
+  }
+  
+  .center-date {
+    font-weight: bold;
+  }
+  
+  .right-support {
+    font-style: italic;
+    background-color: yellow; /* Add background color to support text */
+
+  }
+  
+  .right-support {
+    color: #b71c1c;
+  }
+  
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 600px) {
+    .header-three {
+      flex-direction: row;
+      align-items: flex-start; /* Align items to the start (left) */
+      padding: 1px;
+      margin-left: 2px;
+      margin-right: 3px;
+    }
+  
+    .left-icons {
+      display: none; /* Hide the social media icons on mobile */
+    }
+  
+    .center-date,
+    .right-support {
+      text-align: center;
+      width: 100%; /* Ensure both elements take full width */
+      margin-top: 5px; /* Add some margin to separate the text */
+      font-size: 12px; /* Adjust the font size for mobile */
+    }
+  
+    .right-support {
+      margin-top: 0; /* Remove margin for better alignment */
+      margin-right: 60px;
+      background-color: yellow; /* Add background color to support text */
+
+    }
+  }
+  
